@@ -295,7 +295,7 @@ def player_stats(player_name)
     
     game_hash.map do |team_type, team_info_hash|
       big_shoe = 10
-      big_man = "Lenny"
+      $big_man = "Lenny"
       
         team_info_hash[:players].map do |player_hash| 
        
@@ -305,6 +305,6 @@ def player_stats(player_name)
         
       end
     end
-    big_man
+    $big_man
     end
       
