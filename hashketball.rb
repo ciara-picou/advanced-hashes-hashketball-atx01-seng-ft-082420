@@ -291,7 +291,7 @@ def player_stats(player_name)
     end
     
     def big_shoe_rebounds
-       shoe_size_array = []
+       
     
     game_hash.map do |team_type, team_info_hash|
       $big_shoe = 10
