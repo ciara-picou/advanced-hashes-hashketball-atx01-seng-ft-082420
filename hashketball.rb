@@ -302,7 +302,7 @@ def player_stats(player_name)
          if player_hash[:shoe] > big_shoe
           big_shoe = player_hash[:shoe] && big_man = player_hash[:rebounds]
           end
-        end
+        
       end
     end
     big_man
