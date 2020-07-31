@@ -292,7 +292,7 @@ def player_stats(player_name)
     
     def big_shoe_rebounds
        $big_shoe = 10
-       $big_mane = "Lenny"
+       $big_man = "Lenny"
     
     game_hash.map do |team_type, team_info_hash|
     
@@ -301,9 +301,11 @@ def player_stats(player_name)
          if player_hash[:shoe] > $big_shoe
           $big_shoe = player_hash[:shoe] 
          if player_hash[:shoe] = $big_shoe
-           
-          end
+          $big_man = player_hash[:rebounds]
+            end
         end
      end
    end
+   $big_man
+ end
       
