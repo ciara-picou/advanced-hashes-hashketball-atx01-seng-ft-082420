@@ -299,8 +299,7 @@ def player_stats(player_name)
     team_info_hash[:players].map do |player_hash| 
        
          if player_hash[:shoe] > $big_shoe
-          $big_shoe = player_hash[:shoe] 
-          && big_man = player_hash[:rebounds]
+          $big_shoe = player_hash[:shoe] && big_man = player_hash[:rebounds]
           end
         end
      end
