@@ -296,7 +296,7 @@ def player_stats(player_name)
     game_hash.map do |team_type, team_info_hash|
       big_shoe = 10
       big_man = ""
-      if team_info_hash[:team_name] == team_name
+      
         team_info_hash[:players].map do |player_hash| 
        
          if player_hash[:shoe] > big_shoe
