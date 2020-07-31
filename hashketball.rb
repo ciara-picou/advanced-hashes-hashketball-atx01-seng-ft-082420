@@ -294,14 +294,17 @@ def player_stats(player_name)
        shoe_size_array = []
     
     game_hash.map do |team_type, team_info_hash|
-      
+      big_shoe = 10
+      big_man = ""
       if team_info_hash[:team_name] == team_name
         team_info_hash[:players].map do |player_hash| 
        
-          player_numbers_array.push(player_hash[:shoe])
+         if player_hash[:shoe] > big_shoe
+          big_shoe = player_hash[:shoe] && big_man = player_hash[:player_name]
           end
         end
       end
-      player_numbers_array.max()
+    end
+    return big_man
     end
       
